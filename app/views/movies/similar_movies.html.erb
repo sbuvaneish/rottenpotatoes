@@ -1,0 +1,6 @@
+Movies similar to '<%= params[:title] %>'
+<br><br>
+<% @similar_movies.each do |movie| %>
+<%= movie %><br>
+<% end %>
+<%= link_to 'Back to movie list', movies_path %>
